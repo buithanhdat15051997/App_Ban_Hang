@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    >
+    <ImageView
+        android:id="@+id/imgSPGioHang"
+        android:layout_weight="1"
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:src="@drawable/noimage"/>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="100dp"
+        android:layout_height="150dp">
+        <TextView
+            android:id="@+id/txtTenSPGioHang"
+            android:textSize="26sp"
+            android:textColor="#3949AB"
+            android:text="Tên Sản phẩm"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtgiaGioHang"
+            android:textColor="#E64545"
+            android:text="Giá"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnGiamGioHang"
+                android:text="-"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/btnSoLuongGioHang"
+                android:text="1"
+                android:focusable="false"
+                android:background="@null"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/btnTangGioHang"
+                android:text="+"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/icon_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

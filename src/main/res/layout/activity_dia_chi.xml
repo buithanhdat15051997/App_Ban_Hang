@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarDC"
+        android:background="@color/color_background"
+        app:title="Địa Chỉ"
+        app:titleTextColor="#fff"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+    <LinearLayout
+        android:background="@drawable/backgrondiachi"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/googlemaps"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="120dp" />
+        <TextView
+            android:textSize="32sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="Thông Tin Địa Chỉ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/googlemap"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="Phường 2, Tân Bình, Hồ Chí Minh, Việt Nam"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".DiaChiActivity" />
+    </LinearLayout>
+
+</LinearLayout>

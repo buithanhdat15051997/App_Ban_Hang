@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThongtinKhachHang"
+    android:background="@color/background_main">
+
+    <LinearLayout
+        android:id="@+id/linear_thongtin"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+        <TextView
+            android:textColor="#111110"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:background="#FFF"
+            android:text="Thông tin người mua hàng"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <EditText
+            android:paddingStart="10dp"
+            android:id="@+id/edtTenKH"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_thongtinkhachhang"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Nhập tên khách hàng"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp" />
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/edtSDT"
+            android:layout_marginTop="20dp"
+            android:inputType="phone"
+            android:background="@drawable/btn_thongtinkhachhang"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Nhập số điện thoại"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/edtDiaChi"
+            android:layout_marginTop="20dp"
+            android:inputType="textPostalAddress"
+            android:background="@drawable/btn_thongtinkhachhang"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Nhập địa chỉ"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/edtEMAIL"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_thongtinkhachhang"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Nhập tên Email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/txtDateTime"
+            android:text="Ngày mua hàng"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_thongtinkhachhang"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/btn_loaisp_shape"
+                android:id="@+id/btnGuiThongtin"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Xác nhân"
+                android:textColor="#fff"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:background="@drawable/btn_loaisp_shape"
+                android:layout_marginRight="20dp"
+                android:id="@+id/btnBack"
+                android:textColor="#fff"
+                android:text="Trở về"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/edtThongtinngoaile"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_thongtinkhachhang"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="10dp"
+            android:hint="Thông tin ngoài lề:"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_below="@+id/linear_thongtin"
+        android:src="@drawable/blogger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
